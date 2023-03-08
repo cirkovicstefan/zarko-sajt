@@ -1,0 +1,57 @@
+/*--Stranica Projekti Patent------------------------------------------------------------------*/
+.title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+/*Podesavanje boje span dela teksta*/
+.title span {
+  color: var(--brand-color);
+}
+
+/*Podesavanje linije ispod naslova za trenutnu stranicu*/
+.line {
+  width: 4rem;
+  border-top: 0.25rem solid black;
+  border-radius: 0.5rem;
+}
+.projekti_page .projekti_container {
+    margin: 0.4rem;
+  }
+  
+  .projekti_box {
+    margin-top: 1.2rem;
+    border: 0.15rem solid var(--brand-color);
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .projekti_box .projekti_tekst {
+    margin-top: 0.2rem;
+    text-align: justify;
+  }
+  
+  /*.slike_projekta_red .projekti_slika {
+    width: 12%;
+    height: 12%;
+    display: inline;
+    justify-content: space-between;
+  }*/
+  
+  .projekti_box .projekti_social {
+    margin-top: 0.2rem;
+  }
+  
+  .projekti_box .projekti_social a {
+    font-size: 1.5rem;
+    margin: 0.4rem;
+    color: black;
+  }
+  
+  .projekti_box .projekti_social a:hover {
+    color: var(--brand-color);
+    transition: 0.3s;
+  }
+  
+  /*--Kraj Stranice Projekti Patent------------------------------------------------------------------*/
+  

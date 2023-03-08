@@ -1,0 +1,72 @@
+/*--Stranica Interesovanja-------------------------------------------------------------------*/
+.title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+/*Podesavanje boje span dela teksta*/
+.title span {
+  color: var(--brand-color);
+}
+
+/*Podesavanje linije ispod naslova za trenutnu stranicu*/
+.line {
+  width: 4rem;
+  border-top: 0.25rem solid black;
+  border-radius: 0.5rem;
+}
+.interesovanja_page .interesovanja_container {
+    margin: 1.2rem 0.45rem;
+    display: flex;
+  }
+  
+  .interesovanja_page .interesovanja_container .interesovanja_box {
+    width: 50%;
+    margin: 0.6rem;
+    border: 0.15rem solid var(--brand-color);
+    border-radius: 0.4rem;
+    padding: 0.6rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .interesovanja_page .interesovanja_container .interesovanja_box:hover {
+    background-color: var(--brand-color);
+    transition: 0.3s;
+  }
+  
+  .interesovanja_page .interesovanja_container .interesovanja_box:hover i,
+  .interesovanja_page .interesovanja_container .interesovanja_box:hover .interesovanja_naslov,
+  .interesovanja_page .interesovanja_container .interesovanja_box:hover .interesovanja_tekst {
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .interesovanja_box i {
+    color: var(--brand-color);
+    font-size: 2rem;
+    margin: 0.3rem 0;
+  }
+  
+  .interesovanja_box .interesovanja_naslov {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 800px) {
+    .interesovanja_page .interesovanja_container {
+      flex-direction: column;
+      margin: 0;
+    }
+    .interesovanja_page .interesovanja_container .interesovanja_box {
+      width: 100%;
+      margin: 0.6rem 0;
+    }
+    .interesovanja_container {
+      margin-bottom: 1.9vh;
+    }  
+  }
+  
+  /*-Kraj stranice Interesovanja----------------------------------------------------------------------*/
+  
+  

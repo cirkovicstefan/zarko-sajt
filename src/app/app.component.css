@@ -1,0 +1,284 @@
+
+:root {
+  --brand-color: #109785;
+  --linear-back: Linear-gradient(180deg,
+      rgba(22, 36, 81, 1) 0%,
+      rgba(27, 27, 40, 1) 100%);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.main{
+  height: 100vh;
+  width: 100vw;
+  /*background: var(--linear-back);*/
+  background-image: url(../assets/slike/bg.png);
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*Loader---------------------------------*/
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(22, 36, 81, 1);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+.disppear {
+  animation: vanish 2s forwards ;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/*--Kraj Loadera---------------------------*/
+
+
+
+
+
+
+
+
+
+/* CSS in Body */
+
+
+
+.website_container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    position: relative;
+}
+
+/* Sidebar */
+.website_container .sidebar_container {
+    width: 38%;
+    height: 100%;
+    background-color: white;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.sidebar_container .image {
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+
+.sidebar_container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.sidebar_container .image .right_image_box {
+    width: 70%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    bottom: -3.5rem;
+    left: -3rem;
+    transform: rotate(16deg);
+}
+
+.sidebar_container .image .left_image_box {
+    width: 70%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    bottom: -3.5rem;
+    right: -3rem;
+    transform: rotate(-16deg);
+}
+
+.sidebar_container .sidebar_content {
+    position: absolute;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0.4rem;
+}
+
+.sidebar_container .sidebar_content h1 {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.sidebar_container .sidebar_content p {
+    color: var(--brand-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sidebar_container .sidebar_content .social_media {
+    margin-top: 1rem;
+}
+
+.sidebar_container .sidebar_content .social_media a {
+    font-size: 1.8rem;
+    margin: 0.4rem;
+    color: black;
+}
+
+.sidebar_container .sidebar_content .social_media a:hover {
+    color: var(--brand-color);
+    transition: 0.3s;
+}
+
+.sidebar_container .sidebar_buttom_menu {
+    position: absolute;
+    border-top: 0.2rem solid var(--brand-color);
+    width: 100%;
+    font-size: 1.6rem;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    z-index: 3;
+}
+
+.sidebar_container .sidebar_buttom_menu:hover {
+    color: var(--brand-color);
+    transition: 0.3s;
+}
+
+/* Sidebar Navigacija */
+.sidebar_container .sidebar_navigation {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    z-index: 2;
+    transition: left 0.3s;
+}
+
+.sidebar_container .sidebar_navigation li {
+    margin: 0.3rem 0;
+}
+
+.sidebar_container .sidebar_navigation li a:hover,
+.sidebar_container .sidebar_navigation .active {
+    color: var(--brand-color);
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+/* Content deo*/
+.website_container .content_container {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+.content_container::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+.content_container::-webkit-scrollbar-thumb {
+    width: 0.3rem;
+    background-color: gray;
+    border-radius: 0.2rem;
+}
+
+
+/* About stranica kraj -------------------------------------------------------- */
+
+
+
+/* Stranica obrazovanje------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+  .website_container {
+    width: 92%;
+    height: 92%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mian {
+    height: auto;
+  }
+  .website_container {
+    flex-direction: column;
+    width: 70%;
+  }
+  .website_container .sidebar_container {
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 1rem;
+  }
+
+  
+}
+
+@media screen and (max-width: 800px) {
+  .website_container {
+    margin-top: 1.9vh;
+    margin-left: 1.9vh;
+    margin-right: 1.9vh;
+  }
+
+  .content_container {
+    margin-bottom: 1.9vh;
+    margin-right: 1.9vh;
+  }
+
+  
+@media screen and (max-width: 680px) {
+  .website_container {
+    height: 100%;
+    width: 100%;
+  }
+}}
